@@ -10,8 +10,7 @@ function getOldestFromFirstSpecies(id) {
     (specieAnimal) => specieAnimal.id === getSpecie, // vírgula adicionada na formatação
   ).residents;
   const getOldest = getResidents.reduce((older, animal) =>
-    (older.age > animal.age ? older : animal), // vígula adicionada na formatação
-  );
+    (older.age > animal.age ? older : animal));
   return [getOldest.name, getOldest.sex, getOldest.age];
 }
 
